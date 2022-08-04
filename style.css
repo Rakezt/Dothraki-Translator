@@ -19,17 +19,20 @@ header{
     background-color: var(--blue-color);
     text-align: center;
     font-weight: bold;
-    font-size: x-large;}
+    font-size: x-large;
+    padding-bottom: 0.rem;
+}
 textarea {
     width: 85%;
     display: block;
     margin: 1rem;
-    height: 10vh;
+    height: 9vh;
     padding: 1rem;
 }
 header img {
     width:350px;
     color: var(--blue-color) ;
+    
 }
 #txtOutput{
     border: 1px solid darkgrey;
@@ -38,7 +41,6 @@ header img {
     margin: 1rem;
     padding: 1rem;
 }
-
 footer{
     height: 12vh;
     background-color:var(--blue-color) ;
