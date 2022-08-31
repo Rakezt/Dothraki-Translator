@@ -8,7 +8,7 @@ function getTranslation(text){
     return serverUrl+"?"+"text="+text;
 }
 function errorHandler(error){
-    alert("Error occured: please try after sometime")
+    alert("Error occured: please try after sometime", error)
 }
 
 function clickEventHandler(){
@@ -18,9 +18,8 @@ function clickEventHandler(){
         .then(response=>response.json())
         .then(json=> {
             var translatedText=json.contents.translated;
-            textOutput.innerText=translatedText;
-        })
-           
+            textOutput.innerText=translatedText;})
+        .catch(errorHandler)    
 }
 
 btnTranslate.addEventListener("click", clickEventHandler)
