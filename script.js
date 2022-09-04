@@ -1,7 +1,7 @@
 var btnTranslate = document.querySelector("#btn-translate")
 var textInput=document.querySelector("#txtInput")
 var textOutput=document.querySelector("#txtOutput")
-var serverUrl="https://api.funtranslations.com/translate/dothraki.json";
+var serverUrl="https://api.funtranslat0ions.com/translate/dothraki.json";
 //var serverUrl="https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
 
 function getTranslation(text){
